@@ -1,3 +1,4 @@
+import sys, pygame
 import time
 import datetime
 import MySQLdb
@@ -7,17 +8,15 @@ import signal
 import subprocess
 import RPi.GPIO as GPIO
 
-def handle1() {
-    
-}
+def handle1():
+    print("1 ingedrukt")
 
-def handle2() {
-    
-}
+def handle2():
+    print("2 ingedrukt")
 
 events = {
-    K_1: handle1
-    K_2: handle2
+    KP_1: handle1
+    KP_2: handle2
 }
 
 for event in pygame.event.get():
