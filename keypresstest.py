@@ -1,4 +1,5 @@
 import pygame
+import sys
 
 teamOccupying = 0
 pygame.init()
@@ -21,7 +22,7 @@ while not gameOver:
     for event in events:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_KP1:
-                teamOccupying = 1
+                sys.stdout.write(1)
                 screen.fill([255, 0, 0])
             if event.key == pygame.K_KP2:
                 teamOccupying = 2
